@@ -4,31 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <link rel="stylesheet" href="/stylesheets/custom-styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/custom-styles.css" />
   <title>The Tech Blog</title>
 </head>
 <body class="flex-column min-100-vh">
   <header class="hero flex-shrink-0">
     <nav>
       <ul class="flex-row">
-        <li><a href="/">Home</a></li>
-        <li><a href="/dashboard">Dashboard</a></li>
-        {{#if loggedIn}}
-        <li><button id="logout" class="logout-link">Logout</button></li>
-        {{else}}
-        <li><a href="/login">Login</a></li>
-        {{/if}}
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="./login.html">Login</a></li>
       </ul>
     </nav>
-    <h1 class="app-title">The Tech Blog</h1>
+    <h1 class="app-title">Your Dashboard</h1>
   </header>
   <main class="flex-grow-1">
-   {{{body}}}
+    {{{body}}}
   </main>
+  <div class="flex-row justify-center">
+    <button class="btn-custom"><i class="fas fa-plus mr-2 text-light-dark"></i>New Post</button>
+  </div>
   <footer class="text-center mt-3 flex-shrink-0">Unicornio World Headquarters &copy;2020</footer>
-    {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
 </body>
 </html>

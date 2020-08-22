@@ -1,0 +1,78 @@
+/* CUSTOM STYLES */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-right: 5rem;
+}
+
+nav {
+  margin-bottom: 1.5rem;
+}
+
+nav a {
+  color: inherit;
+}
+
+.logout-link {
+  font-family: inherit;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--primary);
+  border: none;
+  box-shadow: none;
+}
+
+.logout-link:hover {
+  cursor: pointer;
+}
+
+.btn-custom {
+  border-radius: var(--border-radius);
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--dark);
+  display: inline-block;
+  width: auto;
+  margin-top: 20px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+ .btn-custom:hover {
+  color: var(--primary);
+  background-color: var(--tertiary);
+}
+
+/* CARDS */
+.card h3 {
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.card-header {
+  color: var(--tertiary);
+  padding: .75% 2%;
+}
+
+.card-body {
+  padding: 2%;
+  font-size: 1.5rem;
+}
+
+.card-body a {
+  font-size: 1rem;
+}
+
+.form-input {
+  padding: 1%;
+  border: none;
+  border-radius: 0;
+}
+

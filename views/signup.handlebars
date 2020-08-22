@@ -1,0 +1,27 @@
+<!-- sign-up form -->
+<form id="signup-form" class="card">
+  <div class="card-header">
+    <h3>Sign Up</h3>
+  </div>
+  <div class="card-body">
+    <div>
+      <label for="username-signup" class="form-label">Username</label>
+      <input type="text" id="username-signup" class="form-input">
+    </div>
+    <div>
+      <label for="email-signup" class="form-label">Email</label>
+      <input type="text" id="email-signup" class="form-input">
+    </div>
+    <div>
+      <label for="password-signup" class="form-label">Password</label>
+      <input type="password" id="password-signup" class="form-input">
+    </div>
+    <div>
+      <button type="submit" class="btn">Sign Up!</button>
+    </div>
+    <a href="/login">Login instead</a>
+  </div>
+</form>
+
+{{!-- only include front end js from this template since we don't need login functionality in the other views --}}
+<script src="/javascript/signup.js"></script>
