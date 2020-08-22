@@ -2,6 +2,7 @@
   --primary: #ccdad1;
   --secondary: #9caea9;
   --tertiary: #788585;
+  --light: #9b928f;
   --light-dark: #6f6866;
   --dark: #38302e;
   --border-radius: 0.3rem;
@@ -697,9 +698,34 @@ p {
   background-color: var(--light);
 }
 
+.bg-light-dark {
+  background-color: var(--light-dark);
+}
+
 .bg-dark {
   background-color: var(--dark);
 }
+
+/* BORDER UTILITIES */
+.border-primary {
+  border-color: var(--primary);
+}
+.border-secondary {
+  border-color: var(--secondary);
+}
+.border-tertiary {
+  border-color: var(--tertiary);
+}
+.border-light {
+  border-color: var(--light);
+}
+.border-light-dark {
+  border-color: var(--light-dark);
+}
+.border-dark {
+  border-color: var(--dark);
+}
+
 
 
 /* LAYOUT */

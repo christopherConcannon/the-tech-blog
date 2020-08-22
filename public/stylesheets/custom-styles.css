@@ -57,7 +57,6 @@ nav a, .card a {
 }
 
 .card-header {
-  color: var(--tertiary);
   padding: .75% 2%;
 }
 

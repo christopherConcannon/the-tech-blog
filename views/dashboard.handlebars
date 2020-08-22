@@ -1,5 +1,11 @@
 {{#if posts.length}}
 {{#each posts}}
-  {{> post-info }}
+  {{!-- {{> post-info }} --}}
+  <div class="card border-light-dark">
+    <div class="flex-row justify-space-between card-header bg-light-dark text-primary">
+      <h3>{{title}}</h3>
+       <p>{{format_date created_at}}</p>
+    </div>
+  </div>
 {{/each}}
 {{/if}}
