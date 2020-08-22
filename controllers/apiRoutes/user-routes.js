@@ -53,19 +53,16 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
 	User.create({
 		username : req.body.username,
-		email    : req.body.email,
 		password : req.body.password
-	})
-		//
-		.then((dbUserData) => {
-			req.session.save(() => {
-				req.session.user_id = dbUserData.id;
-				req.session.username = dbUserData.username;
-				req.session.loggedIn = true;
+	}).then((dbUserData) => {
+		req.session.save(() => {
+			req.session.user_id = dbUserData.id;
+			req.session.username = dbUserData.username;
+			req.session.loggedIn = true;
 
-				res.json(dbUserData);
-			});
+			res.json(dbUserData);
 		});
+	});
 });
 
 // PUT /api/users/1
@@ -117,14 +114,14 @@ router.delete('/:id', withAuth, (req, res) => {
 
 // POST /api/users/login -- login
 router.post('/login', (req, res) => {
-	// find user based on email
+	// find user based on username
 	User.findOne({
 		where : {
-			email : req.body.email
+			username : req.body.username
 		}
 	}).then((dbUserData) => {
 		if (!dbUserData) {
-			res.status(400).json({ message: 'No user with that email address!' });
+			res.status(400).json({ message: 'No user with that username!' });
 			return;
 		}
 

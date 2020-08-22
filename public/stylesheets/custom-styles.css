@@ -14,7 +14,7 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-nav a {
+nav a, .card a {
   color: inherit;
 }
 

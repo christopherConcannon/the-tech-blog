@@ -37,7 +37,7 @@ router.get('/', withAuth, (req, res) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
       // render template and pass through db data
 			res.render('dashboard', {
-        // layout: 'dashboard',
+        layout: 'dashboard',
 				posts,
 				loggedIn : true
 			});
