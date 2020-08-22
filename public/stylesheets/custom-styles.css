@@ -70,9 +70,17 @@ nav a, .card a {
   font-size: 1rem;
 }
 
-.form-input {
+form label {
+  display: block;
+}
+
+#login-form .form-input, #signup-form .form-input {
   padding: 1%;
   border: none;
   border-radius: 0;
 }
 
+.post-title, .post-content {
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+}
