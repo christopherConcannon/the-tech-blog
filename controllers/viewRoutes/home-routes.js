@@ -1,16 +1,10 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection');
 const { Post, User, Comment } = require('../../models');
 
 // '/' homepage -- display index of all posts
 router.get('/', (req, res) => {
 	Post.findAll({
-		attributes : [
-			'id',
-			'title',
-			'content',
-			'created_at'
-		],
+		attributes : [ 'id', 'title', 'content', 'created_at' ],
 		order      : [ [ 'created_at', 'DESC' ] ],
 		include    : [
 			{
@@ -29,9 +23,11 @@ router.get('/', (req, res) => {
 	})
 		.then((dbPostData) => {
 			const posts = dbPostData.map((post) => post.get({ plain: true }));
+      // do we have access to the the post.user_id at each iteration that we could map a new prop to the object we send to the template, which will be associated with each post, that will indicate if the author is the logged in user?
+
 			res.render('homepage', {
 				posts,
-				loggedIn : req.session.loggedIn
+        loggedIn : req.session.loggedIn
 			});
 		})
 		.catch((err) => {
@@ -46,12 +42,7 @@ router.get('/post/:id', (req, res) => {
 		where      : {
 			id : req.params.id
 		},
-		attributes : [
-			'id',
-			'title',
-			'content',
-			'created_at'
-		],
+		attributes : [ 'id', 'title', 'content', 'created_at' ],
 		include    : [
 			{
 				model      : Comment,
@@ -111,5 +102,3 @@ router.get('/login', (req, res) => {
 });
 
 module.exports = router;
-
-

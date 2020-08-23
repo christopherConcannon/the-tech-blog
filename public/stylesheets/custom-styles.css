@@ -1,85 +1,92 @@
 /* CUSTOM STYLES */
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-  list-style: none;
-  font-size: 1.5rem;
-  margin-right: 5rem;
+	list-style: none;
+	font-size: 1.5rem;
+	margin-right: 5rem;
 }
 
 nav {
-  margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
-nav a, .card a {
-  color: inherit;
+nav a,
+.card-header a {
+	color: inherit;
 }
 
 .logout-link {
-  font-family: inherit;
-  font-size: 1.5rem;
-  background-color: transparent;
-  color: var(--primary);
-  border: none;
-  box-shadow: none;
+	font-family: inherit;
+	font-size: 1.5rem;
+	background-color: transparent;
+	color: var(--primary);
+	border: none;
+	box-shadow: none;
 }
 
+nav a:hover,
 .logout-link:hover {
-  cursor: pointer;
+	cursor: pointer;
+	color: var(--light);
 }
 
 .btn-custom {
-  border-radius: var(--border-radius);
-  color: var(--primary);
-  border: none;
-  outline: none;
-  background-color: var(--dark);
-  display: inline-block;
-  width: auto;
-  margin-top: 20px;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 1.2rem;
+	border-radius: var(--border-radius);
+	color: var(--primary);
+	border: none;
+	outline: none;
+	background-color: var(--dark);
+	display: inline-block;
+	width: auto;
+	margin-top: 20px;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.2rem;
 }
 
- .btn-custom:hover {
-  color: var(--primary);
-  background-color: var(--tertiary);
+.btn-custom:hover {
+	color: var(--primary);
+	background-color: var(--tertiary);
 }
 
 /* CARDS */
 .card h3 {
-  color: inherit;
-  font-size: 1.5rem;
+	/* color: var(--light-dark); */
+	font-size: 1.5rem;
 }
 
 .card-header {
-  padding: .75% 2%;
+	/* color: var(--light); */
+	padding: .75% 2%;
+	min-height: 50px;
 }
 
 .card-body {
-  padding: 2%;
-  font-size: 1.5rem;
+	padding: 2%;
+	font-size: 1.5rem;
 }
 
 .card-body a {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 form label {
-  display: block;
+	display: block;
 }
 
-#login-form .form-input, #signup-form .form-input {
-  padding: 1%;
-  border: none;
-  border-radius: 0;
+#login-form .form-input,
+#signup-form .form-input {
+	padding: 1%;
+	border: none;
+	border-radius: 0;
 }
 
-.post-title, .post-content {
-  border: 2px solid var(--dark);
-  border-radius: var(--border-radius);
+.post-title,
+.post-content {
+	border: 2px solid var(--dark);
+	border-radius: var(--border-radius);
 }
