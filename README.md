@@ -2,15 +2,13 @@
 # The Tech Blog
 
 ![MIT license badge](https://img.shields.io/badge/license-MIT-green)
-<!---
-add screenshot to directory if desired
-![Project Name](./assets/images/screenshot.png)
--->
+
+
 
 
 ## Description
-
 CMS-style blog site where developers can publish their tech-related blog posts and comment on other developers' posts as well
+![Project Name](./public/images/screenshot.png)
 
 ## Table of Contents
   * [Installation](#installation)
