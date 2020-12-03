@@ -4,12 +4,21 @@
 
 ## Description
 CMS-style blog site where developers can publish their tech-related blog posts and comment on other developers' posts as well
-![Project Name](./public/images/screenshot.png)
+
+##### Homescreen
+![Homescreen Screenshot](./assets/images/screenshot.png)
+##### Dashboard View
+![Dashboard View Screenshot](./assets/images/screenshot2.png)
+##### Post Edit View
+![Post Edit View Screenshot](./assets/images/screenshot3.png)
+
+Visit site [here](https://thawing-sands-64218.herokuapp.com/)
 
 ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
+  * [Technologies](#technologies)
   * [Contributing](#contributing)
   * [Testing](#testing)
   * [Questions](#questions)
@@ -34,6 +43,8 @@ Run <$ npm start> to start server on http://localhost:3001
 ## License 
 This project is covered under the MIT license 
 
+## Technologies 
+Node.js, Express, MySQL, Sequelize, Handlebars
 
 ## Contributing
 To see the guidelines adopted for contributing to this project, please view the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.txt)
