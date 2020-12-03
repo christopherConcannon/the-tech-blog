@@ -33,7 +33,6 @@ router.get('/', withAuth, (req, res) => {
       
 			// render template and pass through db data
 			res.render('dashboard', {
-				layout   : 'dashboard',
 				posts,
 				loggedIn : true
 			});
@@ -89,9 +88,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
 
 // GET /dashboard/new
 router.get('/new', withAuth, (req, res) => {
-	res.render('add-post', {
-		layout : 'dashboard'
-	});
+	res.render('add-post');
 });
 
 // GET /dashboard/edit/1
